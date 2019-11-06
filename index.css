@@ -12,6 +12,11 @@
   src: url('assets/calibri-light-2.ttf');
 }
 
+@font-face {
+  font-family: Jaapokki;
+  src: url('assets/Jaapokki-Regular.otf');
+}
+
 body, html {
   height: 100%;
   margin: 0;
@@ -20,6 +25,20 @@ body, html {
 .navbar {
   background-color: #491c6f;
   height: 5%;
+  display: flex;
+  align-items: stretch;
+  padding: 5px 5px 5px 5%;
+}
+
+.navbar img {
+  height: 100%;
+  margin-right: 10px;
+}
+
+.navbar span {
+  font-family: Jaapokki, sans-serif;
+  font-size: 4vh;
+  color: white;
 }
 
 body {
