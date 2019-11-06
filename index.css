@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: BebasKai;
+  src: url('assets/BebasKai.otf');
+}
+
+@font-face {
+  font-family: CalibriLight;
+  src: url('assets/calibri-light-2.ttf');
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #491c6f;
+  height: 5%;
+}
+
+body {
+  background-image: url('assets/bg.png');
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #202020;
+}
+
+.content {
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content h1, .content p, .content h2, .content form {
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-family: 'BebasKai', sans-serif;
+  font-size: 6.7rem;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+p {
+  background-color: rgba(73,28,111, 0.5);
+  font-family: 'CalibriLight', sans-serif;
+  font-size: 2.2rem;
+  color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'CalibriLight', sans-serif;
+  font-size: 2.5rem;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+input {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #f0f0f0;
+  margin-bottom: 10px;
+  height: 2.2rem;
+  width: 20vw;
+  font-family: 'CalibriLight', sans-serif;
+  font-size: 1.5rem;
+  color: #f0f0f0;
+  padding-left: 10px;
+}
+
+::placeholder {
+  color: #c0c0c0;
+}
+
+button {
+  background-color: #491c6f;
+  border: none;
+  font-family: 'BebasKai', sans-serif;
+  font-size: 2.5rem;
+  color: #f0f0f0;
+  margin-bottom: 10px;
+  width: 10rem;
+}
+
+button:hover {
+  background-color: #7e2fbe;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 5.4rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 2.0rem;
+  }
+
+  input {
+    width: 60vw;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
