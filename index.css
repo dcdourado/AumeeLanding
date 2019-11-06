@@ -12,7 +12,7 @@
   src: url('assets/calibri-light-2.ttf');
 }
 
-body, html, frameset {
+body, html {
   height: 100%;
   margin: 0;
 }
@@ -22,7 +22,7 @@ body, html, frameset {
   height: 5%;
 }
 
-body, frameset {
+body {
   background-image: url('assets/bg.png');
   background-position: center center;
   background-repeat: no-repeat;
@@ -32,7 +32,6 @@ body, frameset {
 }
 
 .content {
-  height: 95%;
   display: flex;
   flex-direction: column;
   margin-left: 40%;
@@ -111,7 +110,7 @@ button:hover {
 }
 
 @media only screen and (max-width: 767px) {
-  body, frameset {
+  body {
     background-image: url('assets/mobile.png');
   }
 
